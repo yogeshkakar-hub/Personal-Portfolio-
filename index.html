@@ -308,62 +308,67 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:yogeshkakar02@gmail.com">yogeshkakar02@gmail.com</a></p>
-                            </div>
+    <section id="contact" class="cosmic-contact">
+        <div class="cosmic-bg-overlay"></div>
+        <div class="container cosmic-container">
+            <div class="cosmic-header-wrapper">
+                <p class="cosmic-pre-title">Get In Touch</p>
+                <h2 class="cosmic-main-title">Let's build something memorable together.</h2>
+                <p class="cosmic-sub-title">I'm available for collaborations, freelance opportunities, and portfolio inquiries.</p>
+            </div>
+
+            <div class="cosmic-grid">
+                <!-- Left Side: Contact Information -->
+                <aside class="cosmic-info-panel">
+                    <div class="info-intro">
+                        <h3>Contact Information</h3>
+                        <p>Reach out directly using the form or connect through the details below.</p>
+                    </div>
+
+                    <div class="cosmic-info-list">
+                        <div class="cosmic-info-card">
+                            <p class="info-label">Email</p>
+                            <a href="mailto:yogeshkakar02@gmail.com" class="info-val">yogeshkakar02@gmail.com</a>
                         </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+916367245596">+91 6367245596</a></p>
-                            </div>
+                        <div class="cosmic-info-card">
+                            <p class="info-label">Phone</p>
+                            <a href="tel:+916367245596" class="info-val">+91 6367245596</a>
                         </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Noida, Uttar Pradesh, India</p>
-                            </div>
+                        <div class="cosmic-info-card">
+                            <p class="info-label">Location</p>
+                            <p class="info-val">Noida, Uttar Pradesh, India</p>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://github.com/yogeshkakar-hub" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/yogesh-kumar" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:yogeshkakar02@gmail.com" class="social-link" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
+
+                    <div class="cosmic-info-notice">
+                        <p>I usually reply within 24 to 48 hours. For urgent opportunities, include a clear subject line and a brief summary of your request.</p>
                     </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                </aside>
+
+                <!-- Right Side: The Form -->
+                <form class="contact-form cosmic-form">
+                    <div class="cosmic-form-row">
+                        <div class="cosmic-input-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="cosmic-input-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+
+                    <div class="cosmic-input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What is this about?">
                     </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject">
+
+                    <div class="cosmic-input-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Tell me about your project, idea, or opportunity..." rows="6" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+                    <button type="submit" class="cosmic-submit-btn">Send Message</button>
                 </form>
             </div>
         </div>

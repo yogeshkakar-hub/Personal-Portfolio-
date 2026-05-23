@@ -312,3 +312,5 @@ scrollTopButton.addEventListener('mouseout', () => {
 
 // Initialize AOS-like animations
 console.log('Portfolio loaded successfully!');
+
+

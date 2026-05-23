@@ -548,124 +548,245 @@ section {
     }
 }
 
-/* Contact Section */
-.contact {
-    background: linear-gradient(180deg, rgba(0, 212, 255, 0.05), rgba(124, 58, 237, 0.05));
+/* Contact Section (Cosmic Theme) */
+.cosmic-contact {
+    position: relative;
+    overflow: hidden;
+    background-color: #050816;
+    padding: 6rem 1rem;
+    color: #f1f5f9;
 }
 
-.contact-content {
+.cosmic-bg-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 30%),
+                radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.16), transparent 28%);
+}
+
+.cosmic-container {
+    position: relative;
+    max-width: 1152px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.cosmic-header-wrapper {
+    margin-bottom: 2.5rem;
+    max-width: 42rem;
+}
+
+.cosmic-pre-title {
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: #67e8f9;
+}
+
+.cosmic-main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.cosmic-sub-title {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #cbd5e1;
+}
+
+.cosmic-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
-.contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+@media (min-width: 1024px) {
+    .cosmic-grid {
+        grid-template-columns: 0.95fr 1.05fr;
+    }
 }
 
-.contact-info p {
-    color: var(--text-secondary);
+.cosmic-info-panel,
+.cosmic-form {
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+.cosmic-info-panel {
+    box-shadow: 0 25px 50px -12px rgba(8, 47, 73, 0.2);
+}
+
+.cosmic-form {
+    box-shadow: 0 25px 50px -12px rgba(59, 7, 100, 0.2);
+}
+
+.info-intro {
     margin-bottom: 2rem;
 }
 
-.contact-methods {
+.info-intro h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.info-intro p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #cbd5e1;
+}
+
+.cosmic-info-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 1.25rem;
 }
 
-.contact-method {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
+.cosmic-info-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(34, 211, 238, 0.1);
+    background: rgba(2, 6, 23, 0.6);
+    padding: 1rem;
 }
 
-.contact-method i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-top: 0.3rem;
+.info-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(103, 232, 249, 0.8);
 }
 
-.contact-method h4 {
-    margin-bottom: 0.3rem;
-}
-
-.contact-method p {
-    color: var(--text-secondary);
-    margin: 0;
-}
-
-.contact-method a {
-    color: var(--primary-color);
+.info-val {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: color 0.3s;
 }
 
-.contact-method a:hover {
-    text-decoration: underline;
+a.info-val:hover {
+    color: #67e8f9;
 }
 
-.social-links {
+.cosmic-info-notice {
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(232, 121, 249, 0.1);
+    background: linear-gradient(to bottom right, rgba(6, 182, 212, 0.1), rgba(217, 70, 239, 0.1));
+    padding: 1.25rem;
+}
+
+.cosmic-info-notice p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #e2e8f0;
+}
+
+.cosmic-form {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
-.social-link {
-    width: 45px;
-    height: 45px;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
+.cosmic-form-row {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .cosmic-form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cosmic-input-group {
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cosmic-input-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.cosmic-input-group input,
+.cosmic-input-group textarea {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    background: rgba(2, 6, 23, 0.7);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: #f1f5f9;
+    outline: none;
+    transition: all 0.3s;
+    font-family: inherit;
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.08);
+}
+
+.cosmic-input-group textarea {
+    resize: none;
+}
+
+.cosmic-input-group input::placeholder,
+.cosmic-input-group textarea::placeholder {
+    color: #64748b;
+}
+
+.cosmic-input-group input:focus,
+.cosmic-input-group textarea:focus {
+    border-color: #67e8f9;
+    box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.3);
+}
+
+.cosmic-submit-btn {
+    margin-top: 0.5rem;
+    display: inline-flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #22d3ee, #3b82f6, #d946ef);
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.2);
+    transition: all 0.3s;
 }
 
-.social-link:hover {
-    background: var(--primary-color);
-    color: var(--dark-bg);
-    transform: translateY(-3px);
+.cosmic-submit-btn:hover:not(:disabled) {
+    transform: scale(1.01);
+    box-shadow: 0 10px 15px -3px rgba(34, 211, 238, 0.3);
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 12px 15px;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: var(--text-secondary);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
+.cosmic-submit-btn:focus {
     outline: none;
-    background: rgba(0, 212, 255, 0.05);
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 0 2px #67e8f9, 0 0 0 4px #050816;
+}
+
+.cosmic-submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 /* Certifications Section */
