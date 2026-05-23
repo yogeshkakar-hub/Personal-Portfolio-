@@ -4,6 +4,7 @@
   "description": "**Portfolio for:** Yogesh Kumar  \r **Date Created:** May 3, 2026  \r **Status:** ✅ Complete and Production-Ready",
   "main": "script.js",
   "scripts": {
+    "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
